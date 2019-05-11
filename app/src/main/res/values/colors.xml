@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA6D93</color>
+    <color name="colorPrimaryDark">#D160E6</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="active_star">#FFEB3B</color>
+    <color name="inactive_star">#786992</color>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RatingActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="250dp">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/char_place"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-250dp"
+        android:src="@drawable/five_star"
+        android:layout_marginEnd="8dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_stars"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:id="@+id/lin1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate The Service"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Ratingbar"
+            android:numStars="5"
+            android:rating="3" />
+        <TextView
+            android:id="@+id/rate_value"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#66B408"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Very Good Service"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/feedbackBtn"
+        android:background="@drawable/bg_button"
+        android:text="Give Us Feedback"
+        android:textSize="19dp"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
